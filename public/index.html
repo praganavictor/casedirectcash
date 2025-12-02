@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Clientes - DirectCash</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Dashboard de Clientes</h1>
+      <p>Visualize e gerencie eventos de vendas e upsells</p>
+    </header>
+
+    <main class="content">
+      <div class="filters">
+        <div class="filter-group">
+          <label for="date-from">Data Inicial</label>
+          <input type="date" id="date-from" />
+        </div>
+
+        <div class="filter-group">
+          <label for="date-to">Data Final</label>
+          <input type="date" id="date-to" />
+        </div>
+
+        <button class="btn" id="refresh-btn">Atualizar</button>
+      </div>
+
+      <div id="error-container"></div>
+      <div id="loading-container"></div>
+
+      <div class="table-container" id="table-container">
+        <table id="events-table">
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Valor</th>
+              <th>Data da Compra</th>
+            </tr>
+          </thead>
+          <tbody id="events-tbody">
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
