@@ -2,7 +2,6 @@ import type { FastifyInstance } from 'fastify';
 import { ZodError } from 'zod';
 import {
   createEventSchema,
-  createEventQuerySchema,
   getEventsQuerySchema,
 } from '../validations/event.validation.js';
 import { createEvent, getEvents } from '../services/event.service.js';
