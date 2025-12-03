@@ -1,4 +1,4 @@
-import { prisma } from '../database/prisma.js';
+import { prisma } from '../lib/prisma.js';
 import type { CreateEventInput, EventResponse } from '../types/event.types.js';
 
 const calculateDefaultDateRange = () => {
